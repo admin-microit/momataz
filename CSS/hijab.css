@@ -1,0 +1,119 @@
+/* ==========================================
+   Sidebar Filter & Listing Page Custom Styling
+   ========================================== */
+
+/* Accent Text Color from Root */
+.text-accent {
+    color: var(--accent-color, #209a9a) !important;
+}
+
+/* Sidebar Links */
+.sidebar-link {
+    color: #555555;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+.sidebar-link:hover {
+    color: var(--accent-color, #209a9a);
+    padding-left: 4px;
+}
+
+/* Badge Filter Pills */
+.badge-filter {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    background-color: #f1f1f1;
+    color: #444444;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    transition: all 0.2s ease;
+}
+
+.badge-filter:hover {
+    background-color: var(--accent-color, #209a9a);
+    color: #ffffff;
+}
+
+/* Product Card Aspect Ratio & Zoom */
+.product-img-wrapper {
+    aspect-ratio: 3 / 4;
+}
+
+.product-img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+/* Quick Add Hover Effect */
+.quick-add-wrapper {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .quick-add-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.quick-add-wrapper .btn-dark {
+    background-color: var(--primary, #111111);
+    border: none;
+}
+
+.quick-add-wrapper .btn-dark:hover {
+    background-color: var(--accent-color, #209a9a);
+}
+
+/* Action Icon Buttons */
+.btn-action-icon {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .btn-action-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.btn-action-icon:hover {
+    background-color: var(--accent-color, #209a9a) !important;
+    color: #ffffff !important;
+}
+
+/* Pagination Styling */
+.page-item-link {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.page-item.active .page-item-link {
+    background-color: var(--accent-color, #209a9a);
+    color: #ffffff;
+    border-color: var(--accent-color, #209a9a);
+}
+
+.page-item-link:hover {
+    background-color: var(--accent-color, #209a9a);
+    color: #ffffff !important;
+}

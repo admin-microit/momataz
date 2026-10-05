@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   1. Root Variables & Reset
+   ========================================== */
+:root {
+    --primary-color: #111111;
+    --accent-color: #209a9a;         /* Mint/Teal Accent Color */
+    --accent-hover: #187d7d;         /* Darker Accent for active/focus states */
+    --accent-light: #eaf5f5;         /* Soft Background Highlight */
+    --bg-light: #f7f5f2;
+    --bg-card: #f2efea;
+    --text-muted: #666666;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--primary-color);
+    background-color: #ffffff;
+}
+
+h1, h2, h3, .brand-logo, .font-serif {
+    font-family: var(--font-heading);
+}
+
+.sub-title {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888888;
+    font-weight: 600;
+}
+
+.announcement-bar {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 0.85rem;
+    padding: 6px 0;
+}
+
+/* ==========================================
+   2. Navigation Bar & Mega Menu (Desktop)
+   ========================================== */
+
+/* Nav Link Hover Color & Underline Animation */
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0px;
+    left: 50%;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 80%;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item.dropdown {
+        position: relative;
+    }
+    
+    .navbar .nav-item.dropdown::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        display: block;
+    }
+
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        animation: fadeIn 0.25s ease-in-out;
+    }
+}
+
+/* Standard Dropdown Menu Container Styling */
+.navbar .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid rgba(32, 154, 154, 0.15) !important;
+    border-radius: 0.375rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Mega Dropdown Menu Specific Styling */
+.navbar .mega-menu {
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: none !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 0 !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Mega Menu Sub-headings */
+.mega-menu-heading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    padding: 0;
+}
+
+/* Custom Link Style for Alignment Fix */
+.mega-menu-link {
+    display: block;
+    color: #444444;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0.3rem 0; 
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.mega-menu-link:hover,
+.mega-menu-link:focus {
+    color: var(--accent-color);
+    transform: translateX(4px); 
+}
+
+/* Standard Dropdown Item Styling */
+.dropdown-item {
+    color: #444444;
+    font-size: 0.8rem;
+    text-decoration: none;
+    padding: 0.3rem 0; 
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: var(--accent-color);
+    transform: translateX(4px); 
+}
+
+/* Dropdown Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   Header Icon Hover Effects & Search Bar
+   ========================================== */
+
+/* Icon Styling and Transitions */
+.nav-icon-btn {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #111111;
+}
+
+/* Hover State: Scale Up + Accent Color Effect */
+.nav-icon-btn:hover {
+    color: var(--accent-color, #209a9a) !important;
+    transform: translateY(-2px) scale(1.1);
+}
+
+.nav-icon-btn:hover .badge-count {
+    background-color: var(--accent-color, #209a9a) !important;
+}
+
+/* Hero Section Custom Styles */
+.hero-section {
+  position: relative;
+  background-size: cover !important;
+  background-position: center center !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Custom Primary Button (Shop Now) */
+.btn-hero-primary {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #ffffff;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-hero-primary:hover {
+  background-color: var(--accent-hover, #209a9a);
+  border-color: var(--accent-hover, #209a9a);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-hero-primary:active {
+  transform: translateY(0);
+}
+
+/* Custom Secondary Button (Watch Lookbook) */
+.btn-hero-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-hero-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-3px);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero-secondary:active {
+  transform: translateY(0);
+}
+
+/* Letter Spacing Helpers */
+.tracking-wider {
+  letter-spacing: 2px;
+}
+
+/* Opacity Helper (Bootstrap custom backdrop protection) */
+.opacity-90 {
+  opacity: 0.9;
+}
+
+
+/* ==========================================
+   Expanding Search Box Animation
+   ========================================== */
+
+.search-expand-wrapper {
+    position: relative;
+}
+
+.search-expand-input {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    border: none;
+    background-color: #f1f3f5;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    font-size: 0.85rem;
+    height: 36px;
+    visibility: hidden;
+}
+
+
+.search-expand-wrapper.active .search-expand-input {
+    width: 130px; 
+    padding: 0.25rem 0.75rem;
+    opacity: 1;
+    border: 1px solid #dee2e6;
+    visibility: visible;
+    margin-right: 4px;
+}
+
+@media (min-width: 576px) {
+    .search-expand-wrapper.active .search-expand-input {
+        width: 220px;
+    }
+}
+
+.search-expand-input:focus {
+    background-color: #ffffff;
+    border-color: var(--accent-color, #209a9a) !important;
+}
+
+/* ==========================================
+   Mobile Sidebar & Accordion Uniform Custom Style
+   ========================================== */
+
+/* Search Input Styling */
+.search-input-group {
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+.search-input-group:focus-within {
+    border-color: var(--accent-color, #209a9a) !important;
+}
+
+/* Sidebar ရှိ Link ရော Accordion Button ကိုပါ Font အကုန် တထပ်တည်း ညှိခြင်း */
+#sidebarMenuAccordion .sidebar-menu-btn,
+#sidebarMenuAccordion .sidebar-single-link {
+    font-family: inherit !important;         
+    font-size: 0.875rem !important;          
+    font-weight: 500 !important;             
+    line-height: 1.5 !important;             
+    color: #111111 !important;
+    padding: 0.3rem 0.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    text-transform: uppercase;             
+    letter-spacing: 0.5px;
+}
+
+
+/* Accordion Arrow Icon Customization */
+#sidebarMenuAccordion .sidebar-menu-btn::after {
+    content: "\F282";
+    font-family: "bootstrap-icons" !important;
+    font-size: 0.75rem;
+    transition: transform 0.25s ease;
+    margin-left: auto;
+    color: #666666;
+}
+
+#sidebarMenuAccordion .sidebar-menu-btn:not(.collapsed)::after {
+    transform: rotate(180deg);
+    color: var(--accent-color, #209a9a);
+}
+
+/* Hover & Active States with Root Accent Palette */
+#sidebarMenuAccordion .sidebar-menu-btn:hover,
+#sidebarMenuAccordion .sidebar-single-link:hover,
+#sidebarMenuAccordion .sidebar-menu-btn:not(.collapsed) {
+    color: var(--accent-color, #209a9a) !important;
+}
+
+/* Sub Items Formatting */
+#sidebarMenuAccordion .sub-item {
+    font-size: 0.825rem;
+    color: #555555;
+    text-decoration: none;
+    display: block;
+    padding: 0.4rem 0;
+    transition: all 0.2s ease;
+}
+
+#sidebarMenuAccordion .sub-item:hover {
+    color: var(--accent-color, #209a9a) !important;
+    padding-left: 5px;
+}
+
+/* Font Accent Class */
+.text-accent {
+    color: var(--accent-color, #209a9a) !important;
+}
+
+/* ==========================================
+   Features / Benefits Section Styling
+   ========================================== */
+
+.feature-card {
+    transition: all 0.3s ease-in-out;
+    background-color: #f8f9fa;
+    border-color: #e9ecef !important;
+}
+
+/* Icon Wrapper Styling */
+.feature-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+    border-color: var(--accent-color, #209a9a) !important;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+    background-color: var(--accent-color, #209a9a);
+}
+
+.feature-card:hover .feature-icon-wrapper i {
+    color: #ffffff !important;
+}
+
+/* ==========================================
+   4. Categories & Banner Section
+   ========================================== */
+
+/* Category Circle Avatars */
+.category-avatar-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    background-color: var(--bg-card);
+}
+
+.category-avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale-circle {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Shop by Category Banner Cards */
+.category-banner-card {
+    position: relative;
+    height: 380px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.category-banner-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-banner-card:hover img {
+    transform: scale(1.04);
+}
+
+.category-banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+    color: #ffffff;
+}
+
+/* Promo Banners */
+.promo-banner {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.promo-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.promo-banner:hover img {
+  transform: scale(1.05);
+}
+
+.promo_btn:hover{
+    background-color:#187d7d;
+}
+
+/* ==========================================
+   5. Product Cards Custom Styling
+   ========================================== */
+
+.product-card {
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.product-img-wrapper {
+    aspect-ratio: 3 / 4; 
+}
+
+.product-img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.06);
+}
+
+/* Wishlist and Quick View Circle Buttons */
+.btn-action-icon {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .btn-action-icon {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.btn-action-icon:hover {
+    background-color: var(--accent-color, #209a9a) !important;
+    color: #ffffff !important;
+}
+
+/* Hover Quick Add Overlay Button */
+.quick-add-wrapper {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .quick-add-wrapper {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.quick-add-wrapper .btn-dark {
+    background-color: #111111;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.quick-add-wrapper .btn-dark:hover {
+    background-color: var(--accent-color, #209a9a);
+}
+
+/* Helper Font Size Classes (If not existing) */
+.fs-7 { font-size: 0.85rem !important; }
+.fs-8 { font-size: 0.75rem !important; }
+
+/* ==========================================
+   Shop The Look Hover Overlay Styling
+   ========================================== */
+
+.look-card {
+    cursor: pointer;
+}
+
+.look-img {
+    transition: transform 0.5s ease;
+}
+
+/* Image zoom effect on hover */
+.look-card:hover .look-img {
+    transform: scale(1.08);
+}
+
+/* Dark glassmorphic overlay */
+.look-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: all 0.35s ease-in-out;
+    z-index: 2;
+}
+
+/* Slide-up & fade-in animation for contents */
+.look-overlay i,
+.look-overlay span {
+    transform: translateY(12px);
+    transition: transform 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+}
+
+.look-card:hover .look-overlay {
+    opacity: 1;
+}
+
+.look-card:hover .look-overlay i,
+.look-card:hover .look-overlay span {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Icon scale-up effect */
+.look-overlay i {
+    transition-delay: 0.05s;
+}
+
+.look-overlay span {
+    transition-delay: 0.1s;
+    letter-spacing: 1.5px;
+}
+
+/* ==========================================
+   Footer Custom Styling
+   ========================================== */
+
+/* Social Icon Buttons */
+.social-icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #a0a0a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+    background-color: var(--accent-color, #209a9a);
+    border-color: var(--accent-color, #209a9a);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Footer Link Hover Animations */
+.footer-links a,
+.footer-contact a {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: #209a9a !important;
+    padding-left: 4px;
+}
+
+/* Newsletter Input Focus Styling */
+.newsletter-form .form-control:focus {
+    border-color: var(--accent-color, #209a9a);
+}
+
+.newsletter-form .btn:hover {
+    background-color: var(--accent-color, #209a9a);
+    border-color: var(--accent-color, #209a9a);
+}
+
+/* Helper Text Formatting */
+.tracking-wider { letter-spacing: 1.5px; }
+.tracking-widest { letter-spacing: 2px; }
+.fs-8 { font-size: 0.75rem !important; }

@@ -1,0 +1,279 @@
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+}
+
+.badge-custom {
+    background-color: var(--accent-light);
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.badge-discount {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Product Section Layout Fixes */
+.product-details-row {
+    display: flex;
+    align-items: stretch;
+}
+
+.gallery-container {
+    height: 100%;
+}
+
+.thumb-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.thumb-img {
+    width: 100%;
+    height: calc(25% - 8px);
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.thumb-img.active,
+.thumb-img:hover {
+    border-color: var(--primary-color);
+}
+
+/* Fixed Main Image Container to prevent jumping */
+.main-img-container {
+    position: relative;
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.zoom-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.color-swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-right: 8px;
+    transition: transform 0.2s;
+}
+
+.color-swatch.active {
+    border-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Quantity Picker Styling */
+.quantity-picker {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  width: fit-content;
+}
+
+.btn-qty {
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--primary-color, #111);
+  transition: background-color 0.2s ease;
+}
+
+.btn-qty:hover {
+  background-color: var(--bg-light, #f7f5f2);
+  color: var(--accent-color, #209a9a);
+}
+
+.qty-input {
+  width: 50px;
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0;
+  box-shadow: none !important;
+}
+
+/* Chrome, Safari, Edge, Opera အတွက် number arrow များကို ဖျောက်ခြင်း */
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.btn-add-cart {
+    background-color: var(--primary-color, #111111);
+    color: #ffffff;
+    border: 1px solid var(--primary-color, #111111);
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn-add-cart:hover {
+    background-color: var(--accent-hover, #209a9a);
+    border-color: var(--accent-hover, #209a9a);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-add-cart:active {
+    transform: translateY(0);
+}
+
+.btn-wishlist {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #111111;
+    transition: all 0.3s ease;
+}
+
+.btn-wishlist:hover {
+    background-color: #fff0f2;
+    border-color: #ff4757;
+    color: #ff4757;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.2);
+}
+
+.btn-wishlist:active {
+    transform: translateY(0);
+}
+
+/* Fixed Bottom Line Alignment */
+.info-box {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+/* Related Products / You May Also Like Section */
+.product-card {
+  position: relative;
+  background-color: var(--bg-card, #f2efea);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Card ကို mouse တင်လိုက်ချိန် အနည်းငယ် ကြွတက်ပြီး အရိပ်ထွက်လာစေရန် */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Product Image Style & Zoom Effect */
+.product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05); /* Hover လုပ်ချိန် ပုံလေး အနည်းငယ် ကြီးလာစေရန် */
+}
+
+/* Wishlist Icon Button Style */
+.product-card .wishlist-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: #ffffff;
+  color: var(--primary-color, #111111);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Wishlist Icon Hover Effect */
+.product-card .wishlist-icon:hover {
+  background-color: #ff4757;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* "View All" Link Hover Effect */
+a.text-dark:hover {
+  color: var(--accent-hover, #209a9a) !important;
+}
+
+a.text-dark:hover i {
+  transition: transform 0.2s ease;
+  transform: translateX(4px); /* မြားခေါင်းလေး ညာဘက်သို့ ရွှေ့သွားစေရန် */
+}
