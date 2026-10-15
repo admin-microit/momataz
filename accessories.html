@@ -50,13 +50,15 @@
             <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="mainNavbar">
                 <ul class="navbar-nav gap-lg-2 text-uppercase fw-semibold my-0"
                     style="font-size: 0.75rem; letter-spacing: 0.5px;">
-                    <li class="nav-item"><a class="nav-link active text-dark px-2 py-1" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link  text-dark px-2 py-1" href="index.html">HOME</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">NEWS</a>
-                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                        <a class="nav-link dropdown-toggle  text-dark px-2 py-1" href="new.html" role="button">NEW</a>
+                       <!--
+                         <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
                             <li><a class="mega-menu-link py-1 px-3" href="#">Latest News</a></li>
                             <li><a class="mega-menu-link py-1 px-3" href="#">Events</a></li>
                         </ul>
+                        -->
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">DRESSES</a>
@@ -176,9 +178,24 @@
                                 </a></li>
                         </ul>
                     </li>
-
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">Apparel</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">cARDIGAN</a>
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">PANTS
+                                </a></li>
+                                <li><a class="mega-menu-link py-1 px-3" href="#">TOP
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">SKIRTS
+                                </a></li>
+                                 <li><a class="mega-menu-link py-1 px-3" href="#">SET
+                                </a></li>
+                        </ul>
+                    </li>
+                    
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="accessories.html"
+                        <a class="nav-link dropdown-toggle active text-dark px-2 py-1" href="accessories.html"
                             role="button">ACCESSORIES</a>
 
                         <div class="dropdown-menu mega-menu w-100 border-0 shadow-sm rounded-0 m-0 p-4">
@@ -343,23 +360,32 @@
                         <a href="index.html" class="sidebar-single-link">Home</a>
                     </div>
 
-                    <!-- News -->
-                    <div class="accordion-item border-0 border-bottom">
-                        <h2 class="accordion-header sidebar-single-link">
-                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseNews">
-                                News
-                            </button>
-                        </h2>
-                        <div id="collapseNews" class="accordion-collapse collapse"
-                            data-bs-parent="#sidebarMenuAccordion">
-                            <div class="accordion-body py-2 px-4 bg-light-subtle">
-                                <a href="news.html" class="sub-item">Latest News</a>
-                                <a href="events.html" class="sub-item">Events</a>
-                            </div>
-                        </div>
-                    </div>
+                   <!-- News Dropdown -->
+<div class="accordion-item border-0 border-bottom">
 
+    <h2 class="accordion-header sidebar-single-link">
+        <button class="sidebar-menu-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseNews"
+            aria-expanded="false">
+            New
+        </button>
+    </h2>
+
+    <div id="collapseNews"
+        class="accordion-collapse collapse"
+        data-bs-parent="#sidebarMenuAccordion">
+
+        <div class="accordion-body py-2 px-4 bg-light-subtle">
+            <a href="new.html" class="sub-item">
+                All New In
+            </a>
+        </div>
+
+    </div>
+
+</div>
                     <!-- Dresses -->
                     <div class="accordion-item border-0 border-bottom">
                         <h2 class="accordion-header sidebar-single-link">
@@ -460,8 +486,12 @@
                         <div id="collapseApparel" class="accordion-collapse collapse"
                             data-bs-parent="#sidebarMenuAccordion">
                             <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="#" class="sub-item">CARDIGAN</a>
+                                <a href="#" class="sub-item">PANTS</a>
                                 <a href="#" class="sub-item">Tops</a>
-                                <a href="#" class="sub-item">Bottoms</a>
+                                <a href="#" class="sub-item">SKIRTS</a>
+                                <a href="#" class="sub-item">Tops</a>
+                               
                             </div>
                         </div>
                     </div>
@@ -571,12 +601,12 @@
                                 <li><a href="news.html" class="sidebar-link">News</a></li>
                                 <li><a href="dresses.html" class="sidebar-link">Dresses</a></li>
                                 <li><a href="hijab.html" class="sidebar-link ">Hijab</a></li>
-                                <li><a href="instant-hijab.html" class="sidebar-link active fw-bold text-accent">Instant
+                                <li><a href="instant-hijab.html" class="sidebar-link ">Instant
                                         Hijab</a></li>
                                 <li><a href="prayer-hijab.html" class="sidebar-link">Prayer Hijab</a></li>
                                 <li><a href="kid-hijab.html" class="sidebar-link">Kid Hijab</a></li>
                                 <li><a href="apparel.html" class="sidebar-link">Apparel</a></li>
-                                <li><a href="accessories.html" class="sidebar-link">Accessories</a></li>
+                                <li><a href="accessories.html" class="sidebar-link active fw-bold text-accent">Accessories</a></li>
                                 <li><a href="contact.html" class="sidebar-link">Contact Us</a></li>
                             </ul>
                         </div>
@@ -617,7 +647,7 @@
                                         class="img-fluid w-100 object-fit-cover product-img">
                                 </div>
                                 <div class="quick-add-wrapper position-absolute bottom-0 start-0 w-100 p-3 z-2">
-                                    <a href="product_detail.html"><button
+                                    <a href="product_detail.html" class="text-decoration-none"><button
                                             class="btn btn-dark w-100 py-2 rounded-2 fs-7 fw-medium d-flex align-items-center justify-content-center gap-2">
                                             <i class="bi bi-bag-plus fs-6 "></i> Quick View
                                         </button></a>

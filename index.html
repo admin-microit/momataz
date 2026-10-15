@@ -54,11 +54,13 @@
                     style="font-size: 0.75rem; letter-spacing: 0.5px;">
                     <li class="nav-item"><a class="nav-link active text-dark px-2 py-1" href="index.html">HOME</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">NEWS</a>
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="new.html" role="button">NEW</a>
+                        <!--
                         <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
                             <li><a class="mega-menu-link py-1 px-3" href="#">Latest News</a></li>
                             <li><a class="mega-menu-link py-1 px-3" href="#">Events</a></li>
                         </ul>
+                        -->
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">DRESSES</a>
@@ -178,6 +180,25 @@
                                 </a></li>
                         </ul>
                     </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">Apparel</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">cARDIGAN</a>
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">PANTS
+                                </a></li>
+                                <li><a class="mega-menu-link py-1 px-3" href="#">TOP
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">SKIRTS
+                                </a></li>
+                                 <li><a class="mega-menu-link py-1 px-3" href="#">SET
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                  
 
                     <li class="nav-item dropdown position-static">
                         <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="accessories.html"
@@ -345,22 +366,34 @@
                         <a href="index.html" class="sidebar-single-link">Home</a>
                     </div>
 
-                    <!-- News -->
-                    <div class="accordion-item border-0 border-bottom">
-                        <h2 class="accordion-header sidebar-single-link">
-                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseNews">
-                                News
-                            </button>
-                        </h2>
-                        <div id="collapseNews" class="accordion-collapse collapse"
-                            data-bs-parent="#sidebarMenuAccordion">
-                            <div class="accordion-body py-2 px-4 bg-light-subtle">
-                                <a href="news.html" class="sub-item">Latest News</a>
-                                <a href="events.html" class="sub-item">Events</a>
-                            </div>
-                        </div>
-                    </div>
+                   
+<!-- News Dropdown -->
+<div class="accordion-item border-0 border-bottom">
+
+    <h2 class="accordion-header sidebar-single-link">
+        <button class="sidebar-menu-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseNews"
+            aria-expanded="false">
+            New
+        </button>
+    </h2>
+
+    <div id="collapseNews"
+        class="accordion-collapse collapse"
+        data-bs-parent="#sidebarMenuAccordion">
+
+        <div class="accordion-body py-2 px-4 bg-light-subtle">
+            <a href="new.html" class="sub-item">
+                All New In
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
 
                     <!-- Dresses -->
                     <div class="accordion-item border-0 border-bottom">
@@ -459,11 +492,15 @@
                                 Apparel
                             </button>
                         </h2>
-                        <div id="collapseApparel" class="accordion-collapse collapse"
+                         <div id="collapseApparel" class="accordion-collapse collapse"
                             data-bs-parent="#sidebarMenuAccordion">
                             <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="#" class="sub-item">CARDIGAN</a>
+                                <a href="#" class="sub-item">PANTS</a>
                                 <a href="#" class="sub-item">Tops</a>
-                                <a href="#" class="sub-item">Bottoms</a>
+                                <a href="#" class="sub-item">SKIRTS</a>
+                                <a href="#" class="sub-item">Tops</a>
+                               
                             </div>
                         </div>
                     </div>

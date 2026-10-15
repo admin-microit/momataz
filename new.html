@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNORA - Elevate Your Everyday Style</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/hijab.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar text-center">
+        Free Shipping on orders over $50
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 border-bottom sticky-top">
+        <div class="container-fluid px-3 px-lg-4 d-flex align-items-center justify-content-between">
+
+            <!-- Left Side: Brand Logo + Menu Button -->
+            <div class="d-flex align-items-center gap-2">
+                <!-- Brand Logo & Name -->
+                <a class="navbar-brand fw-bold text-dark text-uppercase fs-5 tracking-wider me-1 d-inline-flex align-items-center mb-0"
+                    href="#">
+                    <img src="image/momataz.webp" alt="MOMTAZ" height="28" class="d-inline-block align-middle me-1"
+                        onerror="this.style.display='none'">
+                    <span class="fw-bold" style="letter-spacing: 1px;">MOMTAZ</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button
+                    class="btn btn-link text-dark p-0 border-0 shadow-none d-lg-none text-decoration-none d-flex align-items-center gap-1 ms-1"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebarMenu">
+                    <i class="bi bi-list fs-4"></i>
+                    <span class="fw-medium text-dark" style="font-size: 0.9rem;">Menu</span>
+                </button>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex" id="mainNavbar">
+                <ul class="navbar-nav gap-lg-2 text-uppercase fw-semibold my-0"
+                    style="font-size: 0.75rem; letter-spacing: 0.5px;">
+                    <li class="nav-item"><a class="nav-link  text-dark px-2 py-1" href="index.html">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active text-dark px-2 py-1" href="#" role="button">NEW</a>
+                        <!--
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Latest News</a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Events</a></li>
+                        </ul>
+                        -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">DRESSES</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Chiffon</a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Dresses</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Mega Dropdown Menu -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="hijab.html"
+                            role="button">HIJAB</a>
+
+                        <div class="dropdown-menu mega-menu w-100 border-0 shadow-sm rounded-0 m-0 p-4">
+                            <div class="container-fluid">
+                                <div class="row g-4">
+
+                                    <!-- Column 1: CHIFFON -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">CHIFFON</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Luxury Chiffon</a></li>
+                                            <li><a class="mega-menu-link" href="#">Classic Chiffon</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Eyelash</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Shimmer</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon with Fancy Stone</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Printed</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Column 2: CHIFFON PLEATED & COTTON -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">CHIFFON PLEATED</h6>
+                                        <ul class="list-unstyled p-0 mb-4">
+                                            <li><a class="mega-menu-link" href="#">Chiffon Full Pleated</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Half Pleated</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Two Tone Pleated</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Pleated Laser Cut</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Flower Printed Pleated</a>
+                                            </li>
+                                        </ul>
+
+                                        <h6 class="mega-menu-heading">COTTON</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Lace Cotton</a></li>
+                                            <li><a class="mega-menu-link" href="#">Crinkle Cotton</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Column 3: JERSEY -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">JERSEY</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Jersey Cotton</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Wave</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Cotton Ribbed</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Column 4: JERSEY JACQUARD & SUEDE -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">JERSEY JACQUARD</h6>
+                                        <ul class="list-unstyled p-0 mb-4">
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard Ribbed Block
+                                                    Design</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Ribbed Line</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard Lines</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard with Crystal</a></li>
+                                        </ul>
+
+                                        <h6 class="mega-menu-heading">SUEDE</h6>
+                                    </div>
+
+                                    <!-- Column 5: SATIN -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">SATIN</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Satin Silk</a></li>
+                                            <li><a class="mega-menu-link" href="#">Satin Eyelash</a></li>
+                                            <li><a class="mega-menu-link" href="#">Satin Silk Crepe</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="instant_hijab.html"
+                            role="button">INSTANT HIJAB</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Jersey Instant Hijab
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="prayer_hijab.html"
+                            role="button">PRAYER HIJAB</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Prayer Hijab Set
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Prater Hijab Only
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="kid_hijab.html" role="button">KID
+                            HIJAB</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Sparkle Princess Hijab
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">Star Kid Hijab
+                                </a></li>
+                        </ul>
+                    </li>
+
+
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">Apparel</a>
+                        <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
+                            <li><a class="mega-menu-link py-1 px-3" href="#">cARDIGAN</a>
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">PANTS
+                                </a></li>
+                                <li><a class="mega-menu-link py-1 px-3" href="#">TOP
+                                </a></li>
+                            <li><a class="mega-menu-link py-1 px-3" href="#">SKIRTS
+                                </a></li>
+                                 <li><a class="mega-menu-link py-1 px-3" href="#">SET
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="accessories.html"
+                            role="button">ACCESSORIES</a>
+
+                        <div class="dropdown-menu mega-menu w-100 border-0 shadow-sm rounded-0 m-0 p-4">
+                            <div class="container-fluid">
+                                <div class="row g-4">
+
+                                    <!-- Column 1: CHIFFON -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">ACCESSORIES</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Luxury Chiffon</a></li>
+                                            <li><a class="mega-menu-link" href="#">Classic Chiffon</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Eyelash</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Shimmer</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon with Fancy Stone</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Printed</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Column 2: CHIFFON PLEATED & COTTON -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">CHIFFON PLEATED</h6>
+                                        <ul class="list-unstyled p-0 mb-4">
+                                            <li><a class="mega-menu-link" href="#">Chiffon Full Pleated</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Half Pleated</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Two Tone Pleated</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Pleated Laser Cut</a></li>
+                                            <li><a class="mega-menu-link" href="#">Chiffon Flower Printed Pleated</a>
+                                            </li>
+                                        </ul>
+
+                                        <h6 class="mega-menu-heading">COTTON</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Lace Cotton</a></li>
+                                            <li><a class="mega-menu-link" href="#">Crinkle Cotton</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Column 3: JERSEY -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">JERSEY</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Jersey Cotton</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Wave</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Cotton Ribbed</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Column 4: JERSEY JACQUARD & SUEDE -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">JERSEY JACQUARD</h6>
+                                        <ul class="list-unstyled p-0 mb-4">
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard Ribbed Block
+                                                    Design</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Ribbed Line</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard Lines</a></li>
+                                            <li><a class="mega-menu-link" href="#">Jersey Jacquard with Crystal</a></li>
+                                        </ul>
+
+                                        <h6 class="mega-menu-heading">SUEDE</h6>
+                                    </div>
+
+                                    <!-- Column 5: SATIN -->
+                                    <div class="col-12 col-md-4 col-lg">
+                                        <h6 class="mega-menu-heading">SATIN</h6>
+                                        <ul class="list-unstyled p-0 m-0">
+                                            <li><a class="mega-menu-link" href="#">Satin Silk</a></li>
+                                            <li><a class="mega-menu-link" href="#">Satin Eyelash</a></li>
+                                            <li><a class="mega-menu-link" href="#">Satin Silk Crepe</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link text-dark px-2 py-1" href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side Icons -->
+            <div class="d-flex align-items-center gap-2 gap-sm-3">
+
+                <!-- Expanding Search Box Container -->
+                <div class="search-expand-wrapper position-relative d-flex align-items-center d-none d-lg-flex">
+                    <input type="text" class="form-control search-expand-input shadow-none rounded-pill"
+                        placeholder="Search..." id="searchExpandInput">
+                    <button class="btn btn-link nav-icon-btn p-1 text-dark border-0 shadow-none search-expand-btn"
+                        type="button" id="searchExpandBtn" title="Search">
+                        <i class="bi bi-search fs-5"></i>
+                    </button>
+                </div>
+
+                <!-- Account Icon -->
+                <a href="account.html" class="nav-icon-btn text-dark p-1" title="Account">
+                    <i class="bi bi-person fs-5"></i>
+                </a>
+
+                <!-- Wishlist Icon with Badge -->
+                <a href="wishlist.html"
+                    class="nav-icon-btn text-dark p-1 position-relative d-inline-flex align-items-center"
+                    title="Wishlist">
+                    <i class="bi bi-heart fs-5"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white fw-bold badge-count"
+                        style="font-size: 0.6rem; padding: 0.25em 0.45em;">0</span>
+                </a>
+
+                <!-- Cart Icon with Badge -->
+                <button
+                    class="btn btn-link nav-icon-btn text-dark p-1 position-relative d-inline-flex align-items-center border-0 shadow-none"
+                    data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Cart">
+                    <i class="bi bi-bag fs-5"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-white fw-bold badge-count"
+                        style="font-size: 0.6rem; padding: 0.25em 0.45em;">0</span>
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Mobile Drawer Sidebar -->
+    <div class="offcanvas offcanvas-start mobile-sidebar border-end d-lg-none" tabindex="-1" id="mobileSidebarMenu"
+        aria-labelledby="mobileSidebarMenuLabel" style="max-width: 310px;">
+
+        <!-- Header: Brand + Close Button -->
+        <div
+            class="offcanvas-header border-bottom py-3 px-3 d-flex align-items-center justify-content-between bg-white">
+            <a href="index.html" class="text-decoration-none d-flex align-items-center gap-2">
+                <img src="image/momataz.webp" alt="MOMTAZ" height="24" onerror="this.style.display='none'">
+                <span class="fw-bold text-dark tracking-wider"
+                    style="letter-spacing: 1.5px; font-size: 1.1rem;">MOMTAZ</span>
+            </a>
+            <button type="button" class="btn-close shadow-none fs-7" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body p-0 d-flex flex-column justify-content-between bg-white">
+            <div>
+                <!-- Search Box -->
+                <div class="p-3 bg-light-subtle border-bottom">
+                    <div class="input-group search-input-group rounded-2 overflow-hidden border">
+                        <span class="input-group-text bg-white border-0 text-muted pe-1 ps-3">
+                            <i class="bi bi-search fs-6"></i>
+                        </span>
+                        <input type="text" class="form-control border-0 shadow-none ps-2 py-2 fs-7"
+                            placeholder="Search our store..." style="font-size: 0.875rem;">
+                    </div>
+                </div>
+
+                <!-- Menu List (Accordion Style) -->
+                <div class="accordion accordion-flush" id="sidebarMenuAccordion">
+
+                    <!-- Home -->
+                    <div class="border-bottom sidebar-single-link">
+                        <a href="index.html" class="sidebar-single-link">Home</a>
+                    </div>
+                    
+                     
+                    
+<!-- News Dropdown -->
+<div class="accordion-item border-0 border-bottom">
+
+    <h2 class="accordion-header sidebar-single-link">
+        <button class="sidebar-menu-btn collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseNews"
+            aria-expanded="false">
+            New
+        </button>
+    </h2>
+
+    <div id="collapseNews"
+        class="accordion-collapse collapse"
+        data-bs-parent="#sidebarMenuAccordion">
+
+        <div class="accordion-body py-2 px-4 bg-light-subtle">
+            <a href="new.html" class="sub-item">
+                All New In
+            </a>
+        </div>
+
+    </div>
+
+</div>
+                    <!-- Dresses -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header sidebar-single-link">
+                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseDresses">
+                                Dresses
+                            </button>
+                        </h2>
+                        <div id="collapseDresses" class="accordion-collapse collapse"
+                            data-bs-parent="#sidebarMenuAccordion">
+                            <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="#" class="sub-item">Chiffon</a>
+                                <a href="#" class="sub-item">Dresses</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hijab -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header sidebar-single-link">
+                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseHijab">
+                                Hijab
+                            </button>
+                        </h2>
+                        <div id="collapseHijab" class="accordion-collapse collapse"
+                            data-bs-parent="#sidebarMenuAccordion">
+                            <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="hijab.html" class="sub-item fw-semibold text-accent">All Hijabs &rarr;</a>
+                                <a href="#" class="sub-item">Luxury Chiffon</a>
+                                <a href="#" class="sub-item">Classic Chiffon</a>
+                                <a href="#" class="sub-item">Chiffon Eyelash</a>
+                                <a href="#" class="sub-item">Chiffon Shimmer</a>
+                                <a href="#" class="sub-item">Chiffon with Fancy Stone</a>
+                                <a href="#" class="sub-item">Chiffon Printed</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instant Hijab -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header sidebar-single-link">
+                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseInstantHijab">
+                                Instant Hijab
+                            </button>
+                        </h2>
+                        <div id="collapseInstantHijab" class="accordion-collapse collapse"
+                            data-bs-parent="#sidebarMenuAccordion">
+                            <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="#" class="sub-item">Daily Instant</a>
+                                <a href="#" class="sub-item">Sport Instant</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prayer Hijab -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header sidebar-single-link">
+                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsePrayerHijab">
+                                Prayer Hijab
+                            </button>
+                        </h2>
+                        <div id="collapsePrayerHijab" class="accordion-collapse collapse"
+                            data-bs-parent="#sidebarMenuAccordion">
+                            <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="#" class="sub-item">Travel Mukena</a>
+                                <a href="#" class="sub-item">Regular Mukena</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kid Hijab -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header sidebar-single-link">
+                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseKidHijab">
+                                Kid Hijab
+                            </button>
+                        </h2>
+                        <div id="collapseKidHijab" class="accordion-collapse collapse"
+                            data-bs-parent="#sidebarMenuAccordion">
+                            <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="#" class="sub-item">Girls Hijab</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Apparel -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header sidebar-single-link">
+                            <button class="sidebar-menu-btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseApparel">
+                                Apparel
+                            </button>
+                        </h2>
+                        <div id="collapseApparel" class="accordion-collapse collapse"
+                            data-bs-parent="#sidebarMenuAccordion">
+                            <div class="accordion-body py-2 px-4 bg-light-subtle">
+                                <a href="#" class="sub-item">CARDIGAN</a>
+                                <a href="#" class="sub-item">PANTS</a>
+                                <a href="#" class="sub-item">Tops</a>
+                                <a href="#" class="sub-item">SKIRTS</a>
+                                <a href="#" class="sub-item">Tops</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accessories -->
+                    <div class="accordion-item border-0 border-bottom">
+                        <h2 class="accordion-header sidebar-single-link">
+                            <button class="sidebar-menu-btn collapsed " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseAccessories">
+                                Accessories
+                            </button>
+                        </h2>
+                        <div id="collapseAccessories" class="accordion-collapse collapse"
+                            data-bs-parent="#sidebarMenuAccordion">
+                            <div class="accordion-body py-2 px-4 bg-light-subtle ">
+                                <a href="#" class="sub-item">Brooch</a>
+                                <a href="#" class="sub-item">Inner Hijab</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div class="border-bottom sidebar-single-link">
+                        <a href="contact.html" class="sidebar-single-link">Contact Us</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Bottom Account & Auth Area -->
+            <div class="p-3 border-top bg-light-subtle mt-3">
+                <div class="d-flex align-items-center gap-2 mb-3 text-dark">
+                    <i class="bi bi-person-circle fs-5"></i>
+                    <span class="fw-medium fs-7">User Account</span>
+                </div>
+                <div class="row g-2">
+                    <div class="col-6">
+                        <a href="login.html" class="btn btn-outline-dark btn-sm w-100 py-2 fw-medium rounded-2 fs-8">Log
+                            In</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="register.html" class="btn btn-dark btn-sm w-100 py-2 fw-medium rounded-2 fs-8"
+                            style="background-color: var(--primary, #111111);">Register</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Page Header with Carousel -->
+<div class="page-header position-relative overflow-hidden rounded-1"
+    style="min-height: 450px;">
+
+    <!-- Top Left Text Navigation -->
+    <div class="position-absolute top-0 start-0 p-3 p-md-4"
+        style="z-index: 10;">
+
+        <nav class="d-flex flex-wrap align-items-center gap-2 small">
+            <a href="index.html"
+                class="text-white text-decoration-none">
+                Home
+            </a>
+
+            <span class="text-white">|</span>
+
+            <a href="new.html"
+                class="text-white text-decoration-none">
+                News
+            </a>
+           <!--
+            <span class="text-white">|</span>
+
+            <a href="#"
+                class="text-white text-decoration-none">
+                Latest News
+            </a>
+
+            <span class="text-white">|</span>
+
+            <a href="#"
+                class="text-white text-decoration-none">
+                Events
+            </a>
+            -->
+        </nav>
+
+    </div>
+
+    <div id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel">
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+
+            <button type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+            <button type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Carousel Images -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="image/news1.png"
+                    class="d-block w-100"
+                    alt="Latest Fashion News 1"
+                    style="height: 450px; object-fit: cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="image/news2.jpg"
+                    class="d-block w-100"
+                    alt="Latest Fashion News 2"
+                    style="height: 450px; object-fit: cover;">
+            </div>
+
+            <div class="carousel-item">
+                <img src="image/news3.jpg"
+                    class="d-block w-100"
+                    alt="Latest Fashion News 3"
+                    style="height: 450px; object-fit: cover;">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Previous Button -->
+    <button class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"
+            aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <!-- Next Button -->
+    <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"
+            aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+
+</div>
+    
+   <!-- New Collection -->
+
+<main class="py-4 bg-white">
+
+    <div class="container-fluid px-lg-5">
+
+        <!-- Sort & Category Dropdown -->
+
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+
+            <div class="d-flex align-items-center gap-2">
+
+                <label for="sortSelect"
+
+                    class="small text-muted text-nowrap d-none d-sm-inline">
+
+                    Sort by:
+
+                </label>
+
+                <select class="form-select form-select-sm rounded-0"
+
+                    id="sortSelect" style="min-width:160px;">
+
+                    <option value="az">Alphabetically, A-Z</option>
+
+                    <option value="low">Price, low to high</option>
+
+                    <option value="high">Price, high to low</option>
+
+                    <option value="new">Date, new to old</option>
+
+                </select>
+
+            </div>
+
+            <!-- Category Dropdown -->
+
+            <div class="dropdown" >
+
+                <button class="btn btn-outline-secondary rounded-0 dropdown-toggle"
+
+                    type="button" id="newInDropdown"
+
+                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                    <span id="selectedCategory">New In</span>
+
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end rounded-0 shadow-sm p-0">
+
+                    <li><button type="button" class="dropdown-item active px-3"
+
+                        data-filter="all">All New In</button></li>
+
+                    <li><button type="button" class="dropdown-item  px-3"
+
+                        data-filter="dresses">Dresses</button></li>
+
+                    <li><button type="button" class="dropdown-item  px-3"
+
+                        data-filter="hijab">Hijab</button></li>
+
+                    <li><button type="button" class="dropdown-item px-3"
+
+                        data-filter="instant-hijab">Instant Hijab</button></li>
+
+                    <li><button type="button" class="dropdown-item px-3"
+
+                        data-filter="prayer-hijab">Prayer Hijab</button></li>
+
+                    <li><button type="button" class="dropdown-item px-3"
+
+                        data-filter="kid-hijab">Kid Hijab</button></li>
+
+                    <li><button type="button" class="dropdown-item px-3"
+
+                        data-filter="accessories">Accessories</button></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Heading -->
+
+        <div class="mb-5 pb-3 border-bottom text-center">
+
+            <span class="badge rounded-pill text-bg-info mb-2">
+
+                JUST LANDED
+
+            </span>
+
+            <h2 class="fw-normal mb-2" style="font-family:Georgia,serif;">
+
+                New Arrivals
+
+            </h2>
+
+            <p class="text-secondary small mb-0">
+
+                Discover the latest styles for your everyday elegance.
+
+            </p>
+
+        </div>
+
+        <!-- Product Grid -->
+
+        <div class="row g-3 g-xl-4" id="productGrid">
+
+            <!-- Product 1 -->
+
+            <div class="col-6 col-lg-4 product-item"
+
+                data-category="hijab"
+
+                data-name="Chiffon Eyelash" data-price="9.99" data-date="6">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+
+                    <div class="position-relative bg-light overflow-hidden">
+
+                        <img src="image/chiffron.jpg"
+
+                            alt="Chiffon Eyelash"
+
+                            class="card-img-top w-100"
+
+                            style="aspect-ratio:3/4;object-fit:cover;">
+
+                        <span class="badge bg-info position-absolute top-0 start-0 m-2">NEW</span>
+
+                        <button class="btn btn-light rounded-circle shadow-sm position-absolute top-0 end-0 m-2"
+
+                            type="button" aria-label="Add to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                        <a href="product_detail.html"
+
+                            class="btn btn-dark btn-sm position-absolute bottom-0 start-0 m-2">
+
+                            <i class="bi bi-eye me-1"></i> View Details
+
+                        </a>
+
+                    </div>
+
+                    <div class="card-body text-center p-2 p-md-3">
+
+                        <p class="text-secondary small mb-1">Everyday Collection</p>
+
+                        <h6 class="card-title fw-medium mb-2">
+
+                            <a href="product_detail.html" class="text-decoration-none text-dark">
+
+                                Chiffon Eyelash
+
+                            </a>
+
+                        </h6>
+
+                        <p class="fw-bold mb-0">$9.99</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="col-6 col-lg-4 product-item"
+
+                data-category="hijab"
+
+                data-name="Chiffon Floral" data-price="9.99" data-date="5">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+
+                    <div class="position-relative bg-light overflow-hidden">
+
+                        <img src="image/chiffron.jpg"
+
+                            alt="Chiffon Floral"
+
+                            class="card-img-top w-100"
+
+                            style="aspect-ratio:3/4;object-fit:cover;">
+
+                        <span class="badge bg-info position-absolute top-0 start-0 m-2">NEW</span>
+
+                        <button class="btn btn-light rounded-circle shadow-sm position-absolute top-0 end-0 m-2"
+
+                            type="button" aria-label="Add to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                        <a href="product_detail.html"
+
+                            class="btn btn-dark btn-sm position-absolute bottom-0 start-0 m-2">
+
+                            <i class="bi bi-eye me-1"></i> View Details
+
+                        </a>
+
+                    </div>
+
+                    <div class="card-body text-center p-2 p-md-3">
+
+                        <p class="text-secondary small mb-1">Floral Collection</p>
+
+                        <h6 class="card-title fw-medium mb-2">
+
+                            <a href="product_detail.html" class="text-decoration-none text-dark">
+
+                                Chiffon Floral
+
+                            </a>
+
+                        </h6>
+
+                        <p class="fw-bold mb-0">$9.99</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="col-6 col-lg-4 product-item"
+
+                data-category="dresses"
+
+                data-name="Chiffon Full Pleated" data-price="9.99" data-date="4">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+
+                    <div class="position-relative bg-light overflow-hidden">
+
+                        <img src="image/Apparel.jpg"
+
+                            alt="Chiffon Full Pleated"
+
+                            class="card-img-top w-100"
+
+                            style="aspect-ratio:3/4;object-fit:cover;">
+
+                        <span class="badge bg-info position-absolute top-0 start-0 m-2">NEW</span>
+
+                        <button class="btn btn-light rounded-circle shadow-sm position-absolute top-0 end-0 m-2"
+
+                            type="button" aria-label="Add to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                        <a href="product_detail.html"
+
+                            class="btn btn-dark btn-sm position-absolute bottom-0 start-0 m-2">
+
+                            <i class="bi bi-eye me-1"></i> View Details
+
+                        </a>
+
+                    </div>
+
+                    <div class="card-body text-center p-2 p-md-3">
+
+                        <p class="text-secondary small mb-1">Pleated Collection</p>
+
+                        <h6 class="card-title fw-medium mb-2">
+
+                            <a href="product_detail.html" class="text-decoration-none text-dark">
+
+                                Chiffon Full Pleated
+
+                            </a>
+
+                        </h6>
+
+                        <p class="fw-bold mb-0">$9.99</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="col-6 col-lg-4 product-item"
+
+                data-category="instant-hijab"
+
+                data-name="Chiffon Half Pleated" data-price="7.99" data-date="3">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+
+                    <div class="position-relative bg-light overflow-hidden">
+
+                        <img src="image/Instant Hijab.jpg"
+
+                            alt="Chiffon Half Pleated"
+
+                            class="card-img-top w-100"
+
+                            style="aspect-ratio:3/4;object-fit:cover;">
+
+                        <span class="badge bg-info position-absolute top-0 start-0 m-2">NEW</span>
+
+                        <button class="btn btn-light rounded-circle shadow-sm position-absolute top-0 end-0 m-2"
+
+                            type="button" aria-label="Add to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                        <a href="product_detail.html"
+
+                            class="btn btn-dark btn-sm position-absolute bottom-0 start-0 m-2">
+
+                            <i class="bi bi-eye me-1"></i> View Details
+
+                        </a>
+
+                    </div>
+
+                    <div class="card-body text-center p-2 p-md-3">
+
+                        <p class="text-secondary small mb-1">Instant Collection</p>
+
+                        <h6 class="card-title fw-medium mb-2">
+
+                            <a href="product_detail.html" class="text-decoration-none text-dark">
+
+                                Chiffon Half Pleated
+
+                            </a>
+
+                        </h6>
+
+                        <p class="fw-bold mb-0">$7.99</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product 5 -->
+
+            <div class="col-6 col-lg-4 product-item"
+
+                data-category="prayer-hijab"
+
+                data-name="Chiffon Lace Shawl" data-price="18.00" data-date="2">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+
+                    <div class="position-relative bg-light overflow-hidden">
+
+                        <img src="image/Prayer Hijab.jpg"
+
+                            alt="Chiffon Lace Shawl"
+
+                            class="card-img-top w-100"
+
+                            style="aspect-ratio:3/4;object-fit:cover;">
+
+                        <span class="badge bg-info position-absolute top-0 start-0 m-2">NEW</span>
+
+                        <button class="btn btn-light rounded-circle shadow-sm position-absolute top-0 end-0 m-2"
+
+                            type="button" aria-label="Add to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                        <a href="product_detail.html"
+
+                            class="btn btn-dark btn-sm position-absolute bottom-0 start-0 m-2">
+
+                            <i class="bi bi-eye me-1"></i> View Details
+
+                        </a>
+
+                    </div>
+
+                    <div class="card-body text-center p-2 p-md-3">
+
+                        <p class="text-secondary small mb-1">Elegant Collection</p>
+
+                        <h6 class="card-title fw-medium mb-2">
+
+                            <a href="product_detail.html" class="text-decoration-none text-dark">
+
+                                Chiffon Lace Shawl
+
+                            </a>
+
+                        </h6>
+
+                        <p class="fw-bold mb-0">$18.00</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Product 6 -->
+
+            <div class="col-6 col-lg-4 product-item"
+
+                data-category="accessories"
+
+                data-name="Fashion Accessory" data-price="12.00" data-date="1">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+
+                    <div class="position-relative bg-light overflow-hidden">
+
+                        <img src="image/bg.png"
+
+                            alt="Fashion Accessory"
+
+                            class="card-img-top w-100"
+
+                            style="aspect-ratio:3/4;object-fit:cover;">
+
+                        <span class="badge bg-info position-absolute top-0 start-0 m-2">NEW</span>
+
+                        <button class="btn btn-light rounded-circle shadow-sm position-absolute top-0 end-0 m-2"
+
+                            type="button" aria-label="Add to wishlist">
+
+                            <i class="bi bi-heart"></i>
+
+                        </button>
+
+                        <a href="product_detail.html"
+
+                            class="btn btn-dark btn-sm position-absolute bottom-0 start-0 m-2">
+
+                            <i class="bi bi-eye me-1"></i> View Details
+
+                        </a>
+
+                    </div>
+
+                    <div class="card-body text-center p-2 p-md-3">
+
+                        <p class="text-secondary small mb-1">Accessories Collection</p>
+
+                        <h6 class="card-title fw-medium mb-2">
+
+                            <a href="product_detail.html" class="text-decoration-none text-dark">
+
+                                Fashion Accessory
+
+                            </a>
+
+                        </h6>
+
+                        <p class="fw-bold mb-0">$12.00</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+            <!-- Pagination Controls -->
+            <div class="d-flex justify-content-center mt-5 mb-3">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-sm gap-1">
+                        <li class="page-item active"><a class="page-item-link px-3 py-2 text-decoration-none rounded-1"
+                                href="#">1</a>
+                        </li>
+                        <li class="page-item"><a
+                                class="page-item-link px-3 py-2 text-decoration-none rounded-1 text-dark" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a
+                                class="page-item-link px-3 py-2 text-decoration-none rounded-1 text-dark" href="#">3</a>
+                        </li>
+                        <li class="page-item"><a
+                                class="page-item-link px-3 py-2 text-decoration-none rounded-1 text-dark"
+                                href="#">&raquo;</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </section>
+
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 pb-4 border-bottom border-secondary border-opacity-25">
+
+                <!-- Column 1: Brand & Social Links -->
+                <div class="col-6 col-lg-3">
+                    <h4 class="brand-logo mb-1 text-white fw-bold tracking-wider">MOMTAZ HIJAB</h4>
+                    <!-- <span class="sub-title text-uppercase text-muted fs-8 tracking-widest d-block mb-3">FASHION</span> -->
+                    <p class="text-secondary small mb-4 pe-lg-3">
+                        Timeless fashion for every moment. Designed with you in mind.
+                    </p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="social-icon-btn" title="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon-btn" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon-btn" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="social-icon-btn" title="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links (Shop) -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="text-uppercase fs-7 mb-3 text-white tracking-wider fw-semibold">Shop</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0 footer-links">
+                        <li><a href="#" class="text-secondary text-decoration-none small">All Products</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">New Arrivals</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">Chiffon</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">Hijab</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">Apparel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Quick Links (Customer Care) -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="text-uppercase fs-7 mb-3 text-white tracking-wider fw-semibold">Customer Care</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0 footer-links">
+                        <li><a href="#" class="text-secondary text-decoration-none small">Contact Us</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">Shipping & Delivery</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">Size Guide</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none small">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact Info -->
+                <div class="col-6 col-lg-3">
+                    <h6 class="text-uppercase fs-7 mb-3 text-white tracking-wider fw-semibold">Get in Touch</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0 footer-contact">
+                        <li class="d-flex align-items-start gap-2 text-secondary small">
+                            <i class="bi bi-geo-alt mt-1 text-white-50"></i>
+                            <span>51-60 Vankleeck Street Elmhurst, NY 11373</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-telephone text-white-50"></i>
+                            <a href="tel:7189262773" class="text-secondary text-decoration-none small">718-926-2773</a>
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="bi bi-envelope text-white-50"></i>
+                            <a href="mailto:momtazhijab@gmail.com"
+                                class="text-secondary text-decoration-none small">momtazhijab@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Accepted Payments Section -->
+            <div class="text-center pt-4 pb-3">
+                <p class="text-secondary small mb-2">Accepted Payments</p>
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                    <span class="badge bg-white text-dark px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px;">
+                        <i class="bi bi-credit-card-2-front-fill text-primary me-1"></i> <strong
+                            style="font-size: 11px;">AMEX</strong>
+                    </span>
+                    <span class="badge bg-white text-dark px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px;">
+                        <i class="bi bi-apple me-1"></i> <strong style="font-size: 11px;">Pay</strong>
+                    </span>
+                    <span class="badge bg-white text-dark px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px;">
+                        <i class="bi bi-credit-card-fill text-info me-1"></i> <strong
+                            style="font-size: 11px;">Diners</strong>
+                    </span>
+                    <span class="badge bg-white text-dark px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px;">
+                        <i class="bi bi-compass-fill text-warning me-1"></i> <strong
+                            style="font-size: 11px;">DISCOVER</strong>
+                    </span>
+                    <span class="badge bg-white text-dark px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px;">
+                        <i class="bi bi-google me-1 text-danger"></i> <strong style="font-size: 11px;">Pay</strong>
+                    </span>
+                    <span class="badge bg-white text-dark px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px;">
+                        <i class="bi bi-circle-fill text-danger" style="font-size: 9px;"></i>
+                        <i class="bi bi-circle-fill text-warning me-1" style="font-size: 9px; margin-left: -3px;"></i>
+                        <strong style="font-size: 11px;">Mastercard</strong>
+                    </span>
+                    <span class="badge bg-primary text-white px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px; background-color: #5a31f4 !important;">
+                        <strong style="font-size: 11px;">shop Pay</strong>
+                    </span>
+                    <span class="badge bg-white text-primary px-2 py-1 rounded border d-inline-flex align-items-center"
+                        style="height: 28px;">
+                        <strong class="fst-italic" style="font-size: 13px;">VISA</strong>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div
+                class="d-flex flex-column flex-md-row align-items-center justify-content-between pt-3 border-top border-secondary border-opacity-10 small text-secondary">
+                <p class="mb-2 mb-md-0 fs-8">&copy; 2026 LUNORA Fashion. All Rights Reserved.</p>
+                <div class="d-flex gap-3 fs-8">
+                    <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a>
+                    <a href="#" class="text-secondary text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-cubic'
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchWrapper = document.querySelector('.search-expand-wrapper');
+            const searchBtn = document.getElementById('searchExpandBtn');
+            const searchInput = document.getElementById('searchExpandInput');
+
+            searchBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                searchWrapper.classList.toggle('active');
+                if (searchWrapper.classList.contains('active')) {
+                    searchInput.focus();
+                }
+            });
+
+            // အပြင်ဘက်ကို Click နှိပ်လိုက်လျှင် Search Box ပြန်ကျုံ့သွားမည်
+            document.addEventListener('click', function (e) {
+                if (!searchWrapper.contains(e.target)) {
+                    searchWrapper.classList.remove('active');
+                }
+            });
+        });
+
+    </script>
+
+
+<!-- Category Filter & Sorting JavaScript -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const buttons = document.querySelectorAll("[data-filter]");
+
+    const products = document.querySelectorAll(".product-item");
+
+    const selectedCategory = document.getElementById("selectedCategory");
+
+    const productGrid = document.getElementById("productGrid");
+
+    const sortSelect = document.getElementById("sortSelect");
+
+    // Filter products
+  
+    buttons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            const category = this.dataset.filter;
+
+            selectedCategory.textContent = this.textContent.trim();
+
+            buttons.forEach(function (item) {
+
+                item.classList.remove("active");
+
+            });
+
+        this.classList.add("active");
+
+            products.forEach(function (product) {
+
+                const show = category === "all" ||
+
+                    product.dataset.category === category;
+
+                product.classList.toggle("d-none", !show);
+
+            });
+
+        });
+
+    });
+
+    // Sort products
+
+    sortSelect.addEventListener("change", function () {
+
+        const items = Array.from(
+
+            productGrid.querySelectorAll(".product-item")
+
+        );
+
+        items.sort(function (a, b) {
+
+            const type = sortSelect.value;
+
+            if (type === "low") {
+
+                return Number(a.dataset.price) - Number(b.dataset.price);
+
+            }
+
+            if (type === "high") {
+
+                return Number(b.dataset.price) - Number(a.dataset.price);
+
+            }
+
+            if (type === "new") {
+
+                return Number(b.dataset.date) - Number(a.dataset.date);
+
+            }
+
+            return a.dataset.name.localeCompare(b.dataset.name);
+
+        });
+
+        items.forEach(function (item) {
+
+            productGrid.appendChild(item);
+
+        });
+
+    });
+
+});
+
+</script>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
