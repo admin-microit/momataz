@@ -78,7 +78,7 @@ h1, h2, h3, .brand-logo, .font-serif {
         position: relative;
     }
     
-    /* .navbar .nav-item.dropdown::after {
+    .navbar .nav-item.dropdown::after {
         content: '';
         position: absolute;
         bottom: -10px;
@@ -86,7 +86,7 @@ h1, h2, h3, .brand-logo, .font-serif {
         width: 100%;
         height: 10px;
         display: block;
-    } */
+    }
 
     .navbar .nav-item.dropdown:hover .dropdown-menu {
         display: block;
