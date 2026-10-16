@@ -78,7 +78,7 @@ h1, h2, h3, .brand-logo, .font-serif {
         position: relative;
     }
     
-    .navbar .nav-item.dropdown::after {
+    /* .navbar .nav-item.dropdown::after {
         content: '';
         position: absolute;
         bottom: -10px;
@@ -86,7 +86,7 @@ h1, h2, h3, .brand-logo, .font-serif {
         width: 100%;
         height: 10px;
         display: block;
-    }
+    } */
 
     .navbar .nav-item.dropdown:hover .dropdown-menu {
         display: block;
@@ -104,7 +104,7 @@ h1, h2, h3, .brand-logo, .font-serif {
 }
 /*
 /* Mega Dropdown Menu Specific Styling */
-/* .navbar .mega-menu {
+.navbar .mega-menu {
     top: 100%;
     left: 0;
     right: 0;
@@ -113,7 +113,7 @@ h1, h2, h3, .brand-logo, .font-serif {
     border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
     border-radius: 0 !important;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06) !important;
-} */
+}
 
 /* Mega Menu Sub-headings */
 .mega-menu-heading {
@@ -305,6 +305,165 @@ h1, h2, h3, .brand-logo, .font-serif {
     background-color: #ffffff;
     border-color: var(--accent-color, #209a9a) !important;
 }
+
+
+/* ===== Modern Category Carousel ===== */
+
+.category-heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.category-carousel-wrapper {
+    position: relative;
+    padding: 0 32px;
+}
+
+.category-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 2px 16px;
+}
+
+.category-track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Each Category */
+.category-card {
+    flex: 0 0 calc((100% - 96px) / 5);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    scroll-snap-align: start;
+    transition: color 0.3s ease;
+}
+
+.category-avatar-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f5f1eb;
+    border: 1px solid #e8e1d7;
+    transition: border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.category-avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.category-card span {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Hover Effect */
+.category-card:hover {
+    color: #92785c;
+}
+
+.category-card:hover .category-avatar-wrapper {
+    border-color: #b8a084;
+    transform: translateY(-3px);
+}
+
+.category-card:hover img {
+    transform: scale(1.06);
+}
+
+/* Navigation Arrows */
+.category-arrow {
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #e5ded4;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-arrow:hover {
+    background-color: #8b765e;
+    color: #fff;
+    border-color: #8b765e;
+}
+
+.category-prev {
+    left: 0;
+}
+
+.category-next {
+    right: 0;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+    .category-card {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .category-track {
+        gap: 24px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+    .category-carousel-wrapper {
+        padding: 0 24px;
+    }
+
+    .category-track {
+        gap: 16px;
+    }
+
+    .category-card {
+        flex-basis: calc((100% - 32px) / 3);
+    }
+
+    .category-card span {
+        font-size: 11px;
+    }
+
+    .category-arrow {
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
+        top: 35%;
+    }
+
+    .category-heading {
+        font-size: 1.35rem;
+    }
+}
+
 
 /* ==========================================
    Mobile Sidebar & Accordion Uniform Custom Style

@@ -63,7 +63,7 @@
                         -->
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="#" role="button">DRESSES</a>
+                        <a class="nav-link dropdown-toggle text-dark px-2 py-1" href="dresses.html" role="button">DRESSES</a>
                         <ul class="dropdown-menu border-0 shadow-sm rounded-0 p-1">
                             <li><a class="mega-menu-link py-1 px-3" href="#">Chiffon</a></li>
                             <li><a class="mega-menu-link py-1 px-3" href="#">Dresses</a></li>
@@ -663,54 +663,99 @@
         </div>
     </section>
 
-    <!-- Circular Categories Navigation -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row text-center g-3 justify-content-center">
+    <!-- Circular Category Carousel -->
+<section class="py-5">
+    <div class="container">
 
-                <!-- Category 1 -->
-                <div class="col-4 col-md-2" data-aos="fade" data-aos-delay="100">
+        <!-- Section Heading -->
+        <div class="text-center mb-4">
+            <h3 class="category-heading">Explore Categories</h3>
+            <p class="text-muted small mb-0">
+                Find your everyday favorites
+            </p>
+        </div>
+
+        <!-- Category Carousel -->
+        <div class="category-carousel-wrapper">
+
+            <!-- Previous Button -->
+            <button class="category-arrow category-prev"
+                    type="button"
+                    aria-label="Previous categories">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <!-- Scrollable Categories -->
+            <div class="category-track" id="categoryTrack">
+
+                <a href="hijab.html" class="category-card">
                     <div class="category-avatar-wrapper">
                         <img src="image/chiffron.jpg" alt="Chiffon">
                     </div>
-                    <span class="small fw-medium">Chiffon</span>
-                </div>
+                    <span>Dresses</span>
+                </a>
 
-                <!-- Category 2 -->
-                <div class="col-4 col-md-2" data-aos="fade" data-aos-delay="200">
+                <a href="instant_hijab.html" class="category-card">
                     <div class="category-avatar-wrapper">
-                        <img src="image/Instant Hijab.jpg" alt="Instant Hijab">
+                        <img src="image/Instant Hijab.jpg"
+                             alt="Instant Hijab">
                     </div>
-                    <span class="small fw-medium">Instant Hijab</span>
-                </div>
+                    <span>Hijab</span>
+                </a>
 
-                <!-- Category 3 -->
-                <div class="col-4 col-md-2" data-aos="fade" data-aos-delay="300">
+                <a href="prayer_hijab.html" class="category-card">
                     <div class="category-avatar-wrapper">
-                        <img src="image/Prayer Hijab.jpg" alt="Prayer Hijab">
+                        <img src="image/Prayer Hijab.jpg"
+                             alt="Prayer Hijab">
                     </div>
-                    <span class="small fw-medium">Prayer Hijab</span>
-                </div>
+                    <span>Instant Hijab</span>
+                </a>
 
-                <!-- Category 4 -->
-                <div class="col-4 col-md-2" data-aos="fade" data-aos-delay="400">
+                <a href="kid_hijab.html" class="category-card">
                     <div class="category-avatar-wrapper">
-                        <img src="image/Kids Hijab.jpg" alt="Kids Hijab">
+                        <img src="image/Kids Hijab.jpg"
+                             alt="Kids Hijab">
                     </div>
-                    <span class="small fw-medium">Kids Hijab</span>
-                </div>
+                    <span>Prayer Hijab</span>
+                </a>
 
-                <!-- Category 5 -->
-                <div class="col-4 col-md-2" data-aos="fade" data-aos-delay="500">
+                <a href="index.html" class="category-card">
                     <div class="category-avatar-wrapper">
                         <img src="image/Apparel.jpg" alt="Apparel">
                     </div>
-                    <span class="small fw-medium">Apparel</span>
-                </div>
+                    <span>Kid Hijab</span>
+                </a>
+
+                <a href="accessories.html" class="category-card">
+                    <div class="category-avatar-wrapper">
+                        <img src="image/Instant Hijab.jpg"
+                             alt="Accessories">
+                    </div>
+                    <span>Apparel</span>
+                </a>
+
+                <a href="new.html" class="category-card">
+                    <div class="category-avatar-wrapper">
+                        <img src="image/chiffron.jpg"
+                             alt="New Arrivals">
+                    </div>
+                    <span>Accessories</span>
+                </a>
 
             </div>
+
+            <!-- Next Button -->
+            <button class="category-arrow category-next"
+                    type="button"
+                    aria-label="Next categories">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+
         </div>
-    </section>
+    </div>
+</section>
+</div>
+
 
     <!-- Shop By Category Section -->
     <section class="pb-5">
@@ -1365,6 +1410,40 @@
             </div>
         </div>
     </footer>
+
+    <!--circle card categories -->
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const track = document.getElementById("categoryTrack");
+    const prevButton = document.querySelector(".category-prev");
+    const nextButton = document.querySelector(".category-next");
+
+    function scrollCategories(direction) {
+        const card = track.querySelector(".category-card");
+
+        if (!card) return;
+
+        const trackStyle = window.getComputedStyle(track);
+        const gap = parseFloat(trackStyle.columnGap) || 0;
+        const distance = card.offsetWidth + gap;
+
+        track.scrollBy({
+            left: direction * distance,
+            behavior: "smooth"
+        });
+    }
+
+    nextButton.addEventListener("click", function () {
+        scrollCategories(1);
+    });
+
+    prevButton.addEventListener("click", function () {
+        scrollCategories(-1);
+    });
+
+});
+</script>
 
 
     <!-- AOS JS -->
